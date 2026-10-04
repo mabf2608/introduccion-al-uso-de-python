@@ -7,21 +7,21 @@
 
 ## ¿Qué es Python?
 
-**Python** es un lenguaje de programación de alto nivel, interpretado y multiparadigma, diseñado para priorizar la legibilidad del código y la productividad[cite: 1]. Cuenta con tipado dinámico y fuertemente tipado[cite: 1], siendo ampliamente utilizado en ciencia de datos, inteligencia artificial, backend y automatización de tareas[cite: 1].
+**Python** es un lenguaje de programación de alto nivel, interpretado y multiparadigma, diseñado para priorizar la legibilidad del código y la productividad. Cuenta con tipado dinámico y fuertemente tipado, siendo ampliamente utilizado en ciencia de datos, inteligencia artificial, backend y automatización de tareas.
 
 ## Herramientas y conceptos trabajados
 
 ### Entorno y Dependencias
-* **Intérprete y entorno virtual:** Configuración y aislamiento de librerías mediante `venv`[cite: 1].
-* **Gestión de paquetes:** Manejo de dependencias y generación de `requirements.txt` a través de `pip`[cite: 1].
+* **Intérprete y entorno virtual:** Configuración y aislamiento de librerías mediante `venv`.
+* **Gestión de paquetes:** Manejo de dependencias y generación de `requirements.txt` a través de `pip`.
 * **Control de versiones:** Seguimiento del código y organización del repositorio con Git.
 
 ### Estructuras de Datos
-* **Secuencias:** Uso y manipulación de listas mutables, tuplas inmutables y rangos numéricos[cite: 2].
-* **Colecciones asociativas:** Pares clave-valor mediante diccionarios y conjuntos únicos (`set`)[cite: 2].
+* **Secuencias:** Uso y manipulación de listas mutables, tuplas inmutables y rangos numéricos.
+* **Colecciones asociativas:** Pares clave-valor mediante diccionarios y conjuntos únicos (`set`).
 * **Estructuras multidimensionales:** Listas anidadas (matrices) para representación tabular de datos.
 
 ### Algoritmia y Lógica
 * **Estructuras de control:** Flujo de ejecución condicional (`if/else`) e iterativo (`for`, `while`).
 * **Resolución de problemas:** Implementación paso a paso de algoritmos matemáticos (factorial, sucesión de Fibonacci y triángulo de Pascal).
-* **Estructura modular:** Organización estándar de scripts con función principal `main()` y punto de entrada `__name__ == "__main__"`[cite: 2].
+* **Estructura modular:** Organización estándar de scripts con función principal `main()` y punto de entrada `__name__ == "__main__"`.
