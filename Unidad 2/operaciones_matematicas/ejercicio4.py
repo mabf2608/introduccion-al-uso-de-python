@@ -1,6 +1,7 @@
 def main():
 
     x = int(input("Introduce un número entero: "))
+    i = 0
 
     if x < 0:
         print("Error: Introduce un número mayor o igual que 0.")
@@ -9,9 +10,10 @@ def main():
     numbers = []
     a, b = 0, 1
 
-    while a <= x:
+    while i < x:
         numbers.append(a)
         a, b = b, a + b
+        i+=1
 
     print(numbers)
 
