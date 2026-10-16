@@ -59,12 +59,18 @@ def main():
     print()
 
     # 7
+    """
     for i in range(len(pokemons) - 1, -1, -1):
         for tipo in pokemons[i]["tipos"]:
             if tipo == "Normal":
                 print("Eliminando el pokemon: " + pokemons[i]["nombre"])
                 del pokemons[i]
                 break
+    """
+    for pokemon in pokemons[:]:
+        for tipo in pokemon["tipos"]:
+            if tipo == "Normal":
+                pokemons.remove(pokemon)
 
 
 if __name__ == "__main__":
