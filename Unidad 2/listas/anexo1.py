@@ -4,8 +4,8 @@ from datos import pokemons
 def main():
 
     # 1
+    #pokemonMasPesado = max(pokemons, key=lambda p: p["peso_kg"])
     pokemonMasPesado = pokemons[0]
-
     for pokemon in pokemons:
         if pokemon["peso_kg"] > pokemonMasPesado["peso_kg"]:
             pokemonMasPesado = pokemon
@@ -14,34 +14,27 @@ def main():
     print()
 
     # 2
-    mediaAltura = 0
+    mediaAltura = round(sum(p["altura_m"] for p in pokemons) / len(pokemons), 2)
 
-    for pokemon in pokemons:
-        mediaAltura += pokemon["altura_m"]
-
-    mediaAltura = mediaAltura / len(pokemons)
-    print("La media es ", round(mediaAltura, 2), " metros.")
+    print("La media es ", mediaAltura, " metros.")
     print()
 
     # 3
-    for pokemon in pokemons:
-        if pokemon["altura_m"] < mediaAltura:
-            print(pokemon["nombre"], pokemon["altura_m"])
+    pBajoMedia = [(p["nombre"], p["altura_m"]) for p in pokemons if p["altura_m"] < mediaAltura]
+    print(pBajoMedia)
     print()
 
     # 4
     for pokemon in pokemons:
-        for tipo in pokemon["tipos"]:
-            if tipo == "Agua":
-                print(pokemon["nombre"], pokemon["tipos"])
-                break
+        if "Agua" in pokemon["tipos"]:
+            print(pokemon["nombre"], pokemon["tipos"])
+
     print()
 
     # 5
-    for pokemon in pokemons:
-        for tipo in pokemon["tipos"]:
-            if tipo[-1] == "a":
-                print(pokemon)
+    for p in pokemons:
+        print([p for t in p["tipos"] if t.endswith("a")])
+
     print()
 
     # 6
@@ -68,9 +61,8 @@ def main():
                 break
     """
     for pokemon in pokemons[:]:
-        for tipo in pokemon["tipos"]:
-            if tipo == "Normal":
-                pokemons.remove(pokemon)
+        if "Normal" in pokemon["tipos"]:
+            pokemons.remove(pokemon)
 
 
 if __name__ == "__main__":
