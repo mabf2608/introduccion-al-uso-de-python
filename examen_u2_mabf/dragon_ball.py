@@ -37,8 +37,6 @@ def ejercicio4():
                     p["atributos"]["fuerza"] = 100
                 else:
                     p["atributos"]["fuerza"] = suma
-
-    for p in personajes:
         print(f"{p["nombre"]} {p["atributos"]["fuerza"]}")
 
 def ejercicio5():

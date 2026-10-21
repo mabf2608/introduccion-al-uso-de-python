@@ -9,8 +9,13 @@ from dragon_ball import (
 
 if __name__ == "__main__":
     ejercicio1()
+    print()
     ejercicio2()
+    print()
     ejercicio3()
+    print()
     ejercicio4()
+    print()
     ejercicio5()
+    print()
     ejercicio6()
