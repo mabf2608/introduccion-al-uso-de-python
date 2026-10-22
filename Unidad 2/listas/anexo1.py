@@ -48,7 +48,7 @@ def main():
             "altura_m": 2.5,
         }
     )
-    print("Se ha añadido el pokemon: " + pokemons[-1]["nombre"])
+    print(f"Se ha añadido el pokemon: {pokemons[-1]["nombre"]}")
     print()
 
     # 7

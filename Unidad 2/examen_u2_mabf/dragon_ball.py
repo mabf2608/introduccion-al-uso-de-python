@@ -13,38 +13,21 @@ def ejercicio1():
     )
 
 def ejercicio2():
-    for p in personajes:
-        suma = p["atributos"]["fuerza"] + p["atributos"]["defensa"] + p["atributos"]["velocidad"]
-        if (suma / 3) > 80:
-            print(p)
+    print([p for p in personajes if (p["atributos"]["fuerza"] + p["atributos"]["defensa"] + p["atributos"]["velocidad"])/3 > 80])
 
 def ejercicio3():
-    suma = 0
-    for p in personajes:
-        suma += p["atributos"]["velocidad"]
+    media = sum(p["atributos"]["velocidad"] for p in personajes) / len(personajes)
 
-    media = suma/len(personajes)
-    for p in personajes:
-        if p["atributos"]["velocidad"] > media:
-            print(p)
+    print ([p for p in personajes if p["atributos"]["velocidad"] > media])
 
 def ejercicio4():
     for p in personajes:
-        for t in p["tecnicas"]:
-            if t == "Big Bang Attack":
-                suma = p["atributos"]["fuerza"] + 10
-                if suma > 100:
-                    p["atributos"]["fuerza"] = 100
-                else:
-                    p["atributos"]["fuerza"] = suma
+        if "Big Bang Attack" in p["tecnicas"]:
+            p["atributos"]["fuerza"] = min(p["atributos"]["fuerza"] + 10, 100)
         print(f"{p["nombre"]} {p["atributos"]["fuerza"]}")
 
 def ejercicio5():
-    fuerzaVegeta = 0
-    for p in personajes:
-        if p["nombre"] == "Vegeta":
-            fuerzaVegeta = p["atributos"]["fuerza"]
-            break
+    fuerzaVegeta = [p["atributos"]["fuerza"] for p in personajes if p["nombre"] == "Vegeta"]
 
     for p in personajes:
         if p["nombre"] != "Vegeta" and fuerzaVegeta > p["atributos"]["defensa"]:
