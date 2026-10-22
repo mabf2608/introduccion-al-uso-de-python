@@ -4,14 +4,8 @@ from datos import personajes_frieren
 def main():
 
     # 1
-    mediaEdadHumanos = 0
-    cantidadHumanos = 0.0
-    for personaje in personajes_frieren:
-        if personaje["raza"] == "Humano":
-            mediaEdadHumanos += personaje["edad"]
-        if personaje["raza"] == "Humano":
-            cantidadHumanos += 1
-    mediaEdadHumanos /= cantidadHumanos
+    mediaEdadHumanos = round(sum(p["edad"] for p in personajes_frieren) / sum(p["raza"] == "Humano" for p in personajes_frieren))
+
     print("La media de edad de la raza humana es: " + str(mediaEdadHumanos))
     print()
 
