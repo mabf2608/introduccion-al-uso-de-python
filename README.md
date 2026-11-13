@@ -13,7 +13,7 @@
 
 ## 📖 Descripción
 
-Repositorio dedicado al aprendizaje de **Python**, desarrollado durante el módulo de Programación de Servicios y Procesos de 2.º de DAM.
+Repositorio dedicado al aprendizaje de **Python**, desarrollado durante el módulo optativo de Python de 2.º de DAM.
 
 Contiene ejercicios prácticos, apuntes, actividades y material teórico sobre programación con Python, estructuras de datos, algoritmia y resolución de problemas.
 
@@ -307,6 +307,6 @@ Las carpetas incluyen scripts `.py`, materiales de consulta y documentos PDF cor
 **Ciclo formativo:** Desarrollo de Aplicaciones Multiplataforma (DAM)  
 **Curso:** 2.º  
 **Centro:** IES Playamar  
-**Módulo:** Programación de Servicios y Procesos
+**Módulo:** Optativa: Python
 
 Este repositorio se utiliza como material de estudio y seguimiento de los conocimientos adquiridos durante el curso académico.
