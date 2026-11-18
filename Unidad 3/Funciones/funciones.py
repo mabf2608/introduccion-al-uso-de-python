@@ -6,22 +6,34 @@ import math
 
 
 def comprobarLetraDNI(cadena: str) -> bool:
+    """
+        Indica si un DNI es válido o no.
+    
+        Params:
+            cadena (str): Cadena de texto con el DNI que queremos comprobar.
+    
+        Returns:
+            (bool): Devuelve true si es válido y false si no lo es.
+    """
+    valido = True
+
     if len(cadena) != 9:
-        return False
+        valido = False
+    else:
+        num = cadena[:8]
+        letra = cadena[8].upper()
 
-    num = cadena[:8]
-    letra = cadena[8].upper()
+        if not num.isdigit() or not letra.isalpha():
+            valido = False
+        else:
+            num = int(num)
+            letras = "TRWAGMYFPDXBNJZSQVHLCKE"
+            resto = letras[num % 23]
 
-    if not num.isdigit():
-        return False
-    if not letra.isalpha():
-        return False
+            if letra != resto:
+                valido = False
 
-    num = int(num)
-    letras = "TRWAGMYFPDXBNJZSQVHLCKE"
-    resto = letras[num % 23]
-
-    return letra == resto
+    return valido
 
 
 # Ejercicio 2 - Crea una función llamada convertirTemperatura
@@ -81,11 +93,25 @@ def convertirTemperatura(num: float, str1: str, str2: str) -> float:
 
 
 def calcularValorBruto(precio: float, iva: str) -> float:
+    """Calcula el valor bruto de un producto partiendo del valor neto y el tipo de IVA aplicable
+
+    Params:
+        precio (float): Valor neto del producto, en euros.
+        iva (str): Tipo de IVA aplicable. Solo acepta los valores GENERAL, REDUCIDO Y SUPERREDUCIDO.
+
+    Returns:
+        (float) : Valor bruto del producto tras aplicar el IVA.
+    """
     unidades_validas = ("GENERAL", "REDUCIDO", "SUPERREDUCIDO")
-    aux = 0.0
     porcentaje = 0
+
+    if precio < 0:
+        raise ValueError("El precio no puede ser negativo.")
+
+    iva = iva.upper()
+
     if iva not in unidades_validas:
-        return aux
+        raise ValueError("El tipo de IVA solo puede ser GENERAL, REDUCIDO o SUPERREDUCIDO")
 
     if iva == "GENERAL":
         porcentaje = 21
