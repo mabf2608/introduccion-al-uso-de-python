@@ -10,4 +10,29 @@ animales = [
 ]
 
 def comprobar_estado(nombre_especie: str) -> str:
-    
+    """
+        Nos permite devolver el estado de la especie introducida como parámetro.
+
+        Params:
+            nombre_especie (str): Nombre de la especie a buscar en la lista.
+
+        Returns:
+            (str): Dependiendo de la especie introducida y de sus ejemplares devuelve un estado u otro.
+    """
+
+    especie = [especie for especie in animales if especie[0].upper() == nombre_especie.upper()]
+    if not especie:
+        raise ValueError("Introduce una especie que se encuentre en la lista.")
+
+    ejemplares = especie[0][2]
+
+    if ejemplares == 0:
+        return "Extinto."
+    elif ejemplares > 0 and ejemplares <= 500:
+        return "En peligro crítico."
+    elif ejemplares > 500 and ejemplares <= 2000:
+        return "En peligro."
+    elif ejemplares > 2000:
+        return "Amenazado"
+    else:
+        raise ValueError("Introduce una especie que se encuentre en la lista.")

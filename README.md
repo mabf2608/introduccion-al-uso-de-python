@@ -15,7 +15,7 @@
 
 Repositorio dedicado al aprendizaje de **Python**, desarrollado durante el módulo optativo de Python de 2.º de DAM.
 
-Contiene ejercicios prácticos, apuntes, actividades y material teórico sobre programación con Python, estructuras de datos, algoritmia y resolución de problemas.
+Contiene ejercicios prácticos, apuntes, actividades y material teórico sobre programación con Python, estructuras de datos, algoritmia, funciones y programación orientada a objetos.
 
 El objetivo es recopilar los conocimientos adquiridos durante el curso, organizar las actividades realizadas y llevar un seguimiento del aprendizaje del lenguaje.
 
@@ -39,9 +39,9 @@ El contenido se encuentra dividido en unidades didácticas, siguiendo la estruct
 |:---:|:---|:---:|
 | 01 | Introducción al uso de Python y su entorno | ✅ Trabajado |
 | 02 | Estructuras básicas, operaciones matemáticas y colecciones | ✅ Trabajado |
-| 03 | Funciones e introducción a la programación orientada a objetos | 🔄 En progreso |
+| 03 | Funciones, ampliaciones y programación orientada a objetos | 🔄 En progreso |
 
-**Leyenda:** ✅ Trabajado | 🔄 En progreso | ⬜ Pendiente
+**Leyenda:** ✅ Trabajado | 🔄 En progreso | ⬜ Pendiente | 📄 Material
 
 ---
 
@@ -165,39 +165,103 @@ Estos ejercicios trabajan la manipulación de datos estructurados, el filtrado d
 
 ### Unidad 3: Funciones y programación orientada a objetos 🔄
 
-Introducción a la creación de funciones, parámetros, valores de retorno y organización modular del código.
+Introducción a la creación de funciones, parámetros, valores de retorno, organización modular del código y programación orientada a objetos.
 
-#### Actividad 3.1: Funciones
+#### Actividad 3.1: Funciones (3/3) ✅
+
+Ejercicios de creación de funciones con parámetros, anotaciones de tipos, valores de retorno y validación de datos.
 
 | Nº | Función | Estado |
 |:---:|:---|:---:|
 | 01 | `comprobarLetraDNI()` — Validación de la letra del DNI | ✅ |
-| 02 | `convertirTemperatura()` — Conversión entre escalas de temperatura | ✅ |
-| 03 | `calcularValorBruto()` — Cálculo de importes con IVA | ✅ |
+| 02 | `convertirTemperatura()` — Conversión entre Celsius, Fahrenheit y Kelvin | ✅ |
+| 03 | `calcularValorBruto()` — Cálculo de importes con diferentes tipos de IVA | ✅ |
 
 **Conceptos trabajados:**
 
 - Declaración de funciones mediante `def`.
 - Parámetros y argumentos.
 - Valores de retorno mediante `return`.
-- Anotaciones de tipos.
-- Operaciones y validaciones dentro de funciones.
-- Importación de módulos.
+- Anotaciones de tipos (`str`, `int`, `float` y `bool`).
+- Validación de parámetros y gestión de errores mediante `ValueError`.
+- Manipulación de cadenas y conversión de tipos.
+- Operaciones matemáticas y redondeo de resultados.
+- Documentación de funciones mediante *docstrings*.
 
-#### Primeras pruebas de POO
+#### Actividad 3.1 bis: Ampliación de funciones (3/3) ✅
 
-El repositorio incluye también una primera práctica con una clase `Cat`.
+Ampliación de la actividad anterior mediante ejercicios de algoritmia, filtrado de datos y conversión de divisas.
 
-Se experimenta con los siguientes conceptos:
+| Nº | Función | Estado |
+|:---:|:---|:---:|
+| 01 | `aplicar_funcion()` — Cálculo de factoriales y sumatorios | ✅ |
+| 02 | `comprobar_estado()` — Clasificación del estado de conservación de especies | ✅ |
+| 03 | `cambiar_divisa()` — Conversión entre euros, dólares y yenes | ✅ |
+
+**Conceptos trabajados:**
+
+- Reutilización de funciones para realizar diferentes cálculos.
+- Selección de operaciones mediante parámetros.
+- Implementación de factoriales y sumatorios.
+- Búsqueda y filtrado de elementos en listas anidadas.
+- Comprensión de listas para localizar datos.
+- Validación de argumentos y lanzamiento de excepciones.
+- Conversión de divisas mediante factores de cambio.
+- Control de valores incorrectos y redondeo de resultados.
+
+La actividad se encuentra organizada en tres archivos independientes dentro de la carpeta `Funciones/bis/`.
+
+---
+
+### Unidad 3: Programación orientada a objetos 🔄
+
+Introducción a la creación de clases, constructores, atributos, métodos y operaciones entre objetos.
+
+#### Ejemplos de clases ✅
+
+El repositorio contiene ejemplos iniciales de programación orientada a objetos mediante las clases `Cat` y `CuentaBancaria`.
+
+| Clase | Contenido | Estado |
+|:---|:---|:---:|
+| `Cat` | Declaración de atributos, constructor y métodos de instancia | ✅ |
+| `CuentaBancaria` | Gestión de titular, saldo, depósitos y retiradas | ✅ |
+
+**Conceptos trabajados:**
 
 - Declaración de clases mediante `class`.
-- Constructores con `__init__()`.
-- Atributos de instancia.
-- Creación de objetos.
-- Métodos de instancia.
-- Importación de clases entre archivos.
+- Constructores mediante `__init__()`.
+- Utilización de `self` para acceder a atributos y métodos.
+- Inicialización y modificación de atributos.
+- Creación de métodos de instancia.
+- Validación de operaciones mediante `ValueError`.
+- Representación de objetos mediante `__str__()`.
 
-Esta sección corresponde a las primeras pruebas de programación orientada a objetos.
+#### Actividad de clases: Jarra ✅
+
+Implementación de una clase `Jarra` que representa un recipiente con capacidad y contenido, permitiendo realizar operaciones sobre su estado.
+
+| Método | Funcionalidad | Estado |
+|:---|:---|:---:|
+| `__init__()` | Inicialización de capacidad y contenido | ✅ |
+| `llenar()` | Llenado completo de la jarra | ✅ |
+| `vaciar()` | Vaciado de la jarra | ✅ |
+| `servir()` | Extracción de una cantidad determinada | ✅ |
+| `llenar_desde()` | Transferencia de contenido entre dos jarras | ✅ |
+| `__str__()` | Representación de los datos de la jarra | ✅ |
+
+**Conceptos trabajados:**
+
+- Creación de objetos con diferentes capacidades.
+- Inicialización de atributos con valores por defecto.
+- Validación de capacidades y cantidades.
+- Modificación del estado de los objetos.
+- Operaciones entre diferentes instancias de una clase.
+- Reutilización de métodos dentro de otros métodos.
+- Referencias a objetos mediante parámetros.
+- Representación de objetos utilizando `__str__()`.
+- Organización de clases y ejecución mediante un archivo `main.py`.
+
+La actividad incluye un programa de prueba que crea dos jarras y ejecuta diferentes operaciones de llenado, vaciado, extracción y transferencia de contenido.
 
 ---
 
@@ -242,15 +306,35 @@ Esta sección corresponde a las primeras pruebas de programación orientada a ob
 - Comprensión de listas.
 - Resolución de problemas mediante estructuras iterativas.
 
-### Python — Funciones y modularización 🔄
+### Python — Funciones y modularización ✅
 
 - Declaración y llamada de funciones.
 - Parámetros y argumentos.
-- Valores de retorno.
+- Valores de retorno mediante `return`.
 - Anotaciones de tipos.
-- Importación de módulos.
+- Documentación mediante *docstrings*.
+- Importación de módulos y bibliotecas.
+- Validación de parámetros.
+- Gestión de errores mediante `raise ValueError`.
+- Reutilización de funciones.
 - Separación de datos y lógica del programa.
-- Introducción a clases y objetos.
+- Operaciones matemáticas mediante funciones.
+- Tratamiento y filtrado de colecciones.
+- Conversión de temperaturas y divisas.
+
+### Python — Programación orientada a objetos 🔄
+
+- Declaración de clases y creación de objetos.
+- Constructores mediante `__init__()`.
+- Atributos de instancia.
+- Métodos de instancia y utilización de `self`.
+- Métodos con parámetros.
+- Valores por defecto en constructores.
+- Modificación y consulta del estado de objetos.
+- Operaciones entre diferentes objetos.
+- Representación mediante `__str__()`.
+- Validación de datos y gestión de excepciones.
+- Separación de clases y programas principales en archivos independientes.
 
 ---
 
@@ -268,26 +352,108 @@ python-gs/
 │
 ├── Unidad 2/
 │   ├── estructuras_basicas/
+│   │   ├── ejercicio1.py
+│   │   ├── ...
+│   │   └── ejercicio10.py
 │   ├── operaciones_matematicas/
+│   │   ├── ejercicio1.py
+│   │   ├── ...
+│   │   └── ejercicio5.py
 │   ├── listas1/
+│   │   ├── anexo1.py
+│   │   ├── anexo2.py
+│   │   └── datos.py
 │   ├── listas2/
 │   │   ├── anexo1/
 │   │   └── anexo2/
 │   ├── practica_antes_examen/
+│   │   ├── estructuras de control/
+│   │   └── listas/
 │   ├── examen_u2.1_mabf/
 │   ├── examen_u2.2_mabf/
 │   └── Documentación de la unidad
 │
 ├── Unidad 3/
 │   ├── Funciones/
-│   ├── Pruebas POO/
+│   │   ├── funciones1/
+│   │   │   └── funciones.py
+│   │   └── bis/
+│   │       ├── funcion1.py
+│   │       ├── funcion2.py
+│   │       └── funcion3.py
+│   │
+│   ├── Clases/
+│   │   ├── Ejemplos/
+│   │   │   ├── cat.py
+│   │   │   └── CuentaBancaria.py
+│   │   └── clases1/
+│   │       ├── Jarra.py
+│   │       └── main.py
+│   │
 │   └── Documentación de la unidad
 │
 ├── .gitignore
 └── README.md
 ```
 
-Las carpetas incluyen scripts `.py`, materiales de consulta y documentos PDF correspondientes a las actividades.
+El repositorio contiene scripts `.py`, material teórico y documentos correspondientes a las actividades de cada unidad.
+
+---
+
+## ▶️ Ejecución de los ejercicios
+
+Para ejecutar los programas es necesario disponer de Python instalado en el equipo.
+
+### 1. Clonar el repositorio
+
+```bash
+git clone https://github.com/mabf2608/python-gs.git
+cd python-gs
+```
+
+### 2. Ejecutar un ejercicio
+
+Por ejemplo, para ejecutar un ejercicio de estructuras básicas:
+
+```bash
+python "Unidad 2/estructuras_basicas/ejercicio1.py"
+```
+
+Dependiendo de la instalación, puede ser necesario utilizar `python3` en lugar de `python`.
+
+Algunos ejercicios utilizan `input()` para solicitar datos al usuario desde la consola.
+
+### 3. Ejecutar la práctica de Jarra
+
+Para ejecutar el programa de prueba de la clase `Jarra`:
+
+```bash
+python "Unidad 3/Clases/clases1/main.py"
+```
+
+El programa crea diferentes objetos y prueba sus métodos.
+
+### 4. Entornos virtuales
+
+Para las actividades que requieran un entorno virtual:
+
+```bash
+python -m venv .venv
+```
+
+**Windows (PowerShell):**
+
+```powershell
+.venv\Scripts\Activate.ps1
+```
+
+**Linux/macOS:**
+
+```bash
+source .venv/bin/activate
+```
+
+Las dependencias externas, cuando sean necesarias, deberán instalarse en el entorno correspondiente.
 
 ---
 
