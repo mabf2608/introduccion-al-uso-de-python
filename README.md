@@ -1,4 +1,3 @@
-
 <div align="center">
   <img src="https://repository-images.githubusercontent.com/429472943/90754be2-3d40-4755-b873-283c5cbf1018" width="350" alt="Python Logo"/>
 
@@ -15,7 +14,7 @@
 
 Repositorio dedicado al aprendizaje de **Python**, desarrollado durante el módulo optativo de Python de 2.º de DAM.
 
-Contiene ejercicios prácticos, apuntes, actividades y material teórico sobre programación con Python, estructuras de datos, algoritmia, funciones y programación orientada a objetos.
+Contiene ejercicios prácticos, apuntes, actividades, prácticas de preparación de exámenes y material teórico sobre programación con Python, estructuras de datos, algoritmia, funciones y programación orientada a objetos.
 
 El objetivo es recopilar los conocimientos adquiridos durante el curso, organizar las actividades realizadas y llevar un seguimiento del aprendizaje del lenguaje.
 
@@ -37,11 +36,11 @@ El contenido se encuentra dividido en unidades didácticas, siguiendo la estruct
 
 | Unidad | Contenido | Estado |
 |:---:|:---|:---:|
-| 01 | Introducción al uso de Python y su entorno | ✅ Trabajado |
-| 02 | Estructuras básicas, operaciones matemáticas y colecciones | ✅ Trabajado |
-| 03 | Funciones, ampliaciones y programación orientada a objetos | 🔄 En progreso |
+| 01 | Introducción al uso de Python y su entorno | ✅ Completado |
+| 02 | Estructuras básicas, operaciones matemáticas y colecciones | ✅ Completado |
+| 03 | Funciones, excepciones y programación orientada a objetos | 🟡 En progreso |
 
-**Leyenda:** ✅ Trabajado | 🔄 En progreso | ⬜ Pendiente | 📄 Material
+**Leyenda:** ✅ Completado | 🟡 En progreso | ⬜ Pendiente | 📄 Material
 
 ---
 
@@ -163,11 +162,30 @@ Estos ejercicios trabajan la manipulación de datos estructurados, el filtrado d
 
 ---
 
-### Unidad 3: Funciones y programación orientada a objetos 🔄
+### Unidad 3: Funciones, excepciones y programación orientada a objetos 🟡
 
-Introducción a la creación de funciones, parámetros, valores de retorno, organización modular del código y programación orientada a objetos.
+Introducción a la creación de funciones, parámetros, valores de retorno, gestión de excepciones, organización modular del código y programación orientada a objetos.
 
-#### Actividad 3.1: Funciones (3/3) ✅
+#### Progreso de las actividades
+
+**Progreso de los ejercicios publicados hasta la fecha: 9/9 — 100 %**
+
+| Actividad | Contenido | Completados | Estado |
+|:---|:---|:---:|:---:|
+| 3.1 | Ejercicios de funciones | 3/3 | ✅ |
+| 3.1 bis | Ampliación de ejercicios de funciones | 3/3 | ✅ |
+| 3.2 | Ejercicios de objetos | 3/3 | ✅ |
+| **Total** | **Relaciones de ejercicios actuales** | **9/9** | **✅** |
+
+El seguimiento incluye los ejercicios de las relaciones publicadas hasta la fecha, sin contabilizar los ejemplos, ejercicios adicionales de repaso ni exámenes.
+
+La unidad permanece en progreso hasta finalizar todos los contenidos previstos.
+
+#### Bloque 1: Funciones y excepciones ✅
+
+Introducción a la definición de funciones propias, reutilización de código, validación de parámetros y gestión de excepciones.
+
+##### Actividad 3.1: Funciones (3/3) ✅
 
 Ejercicios de creación de funciones con parámetros, anotaciones de tipos, valores de retorno y validación de datos.
 
@@ -187,8 +205,9 @@ Ejercicios de creación de funciones con parámetros, anotaciones de tipos, valo
 - Manipulación de cadenas y conversión de tipos.
 - Operaciones matemáticas y redondeo de resultados.
 - Documentación de funciones mediante *docstrings*.
+- Utilización de `math.ceil()` para redondear hacia arriba.
 
-#### Actividad 3.1 bis: Ampliación de funciones (3/3) ✅
+##### Actividad 3.1 bis: Ampliación de funciones (3/3) ✅
 
 Ampliación de la actividad anterior mediante ejercicios de algoritmia, filtrado de datos y conversión de divisas.
 
@@ -211,13 +230,57 @@ Ampliación de la actividad anterior mediante ejercicios de algoritmia, filtrado
 
 La actividad se encuentra organizada en tres archivos independientes dentro de la carpeta `Funciones/bis/`.
 
----
+##### Prácticas de preparación de examen ✅
 
-### Unidad 3: Programación orientada a objetos 🔄
+Ejercicios adicionales orientados a reforzar los contenidos trabajados en la unidad y preparar la evaluación de funciones.
 
-Introducción a la creación de clases, constructores, atributos, métodos y operaciones entre objetos.
+| Nº | Función | Contenido | Estado |
+|:---:|:---|:---|:---:|
+| 01 | `convertirVelocidad()` | Conversión entre nudos, kilómetros por hora y metros por segundo | ✅ |
 
-#### Ejemplos de clases ✅
+El ejercicio está ambientado en el universo de **One Piece**, simulando un sistema de conversión de velocidades para la navegación del Thousand Sunny.
+
+**Conceptos trabajados:**
+
+- Funciones con múltiples parámetros.
+- Anotaciones de tipos y valores de retorno.
+- Normalización de cadenas mediante `upper()`.
+- Validación de unidades mediante tuplas y operadores de pertenencia.
+- Control de valores negativos y unidades de origen y destino iguales.
+- Lanzamiento de excepciones mediante `raise ValueError`.
+- Aplicación de fórmulas matemáticas.
+- Redondeo mediante `round()`.
+
+El ejercicio se encuentra en el archivo `Funciones/repaso_examen1.py`.
+
+##### Examen de funciones — Práctica 3.1 ✅
+
+Ejercicio realizado durante la evaluación de los contenidos de la UD3.1.
+
+| Función | Contenido | Estado |
+|:---|:---|:---:|
+| `convertir_acciones()` | Cálculo del valor de acciones y conversión entre euros, dólares y libras | ✅ Realizado |
+
+La función permite calcular el valor total de una cantidad de acciones de las compañías NVIDIA, Sony y BMW, convirtiendo el importe a la moneda indicada mediante los tipos de cambio proporcionados en el enunciado.
+
+**Conceptos evaluados:**
+
+- Definición de funciones y anotaciones de tipos.
+- Gestión de parámetros y valores de retorno.
+- Validación de compañías y monedas.
+- Normalización de cadenas mediante `upper()` y `lower()`.
+- Utilización de estructuras condicionales anidadas.
+- Cálculo del valor total de acciones.
+- Conversión de importes entre diferentes divisas.
+- Redondeo de resultados a dos decimales.
+
+El examen se encuentra en el archivo `examen_funciones_mabf/practica31.py`.
+
+#### Bloque 2: Programación orientada a objetos 🟡
+
+Introducción a la creación de clases, constructores, atributos, métodos, operaciones entre objetos, herencia y clases abstractas.
+
+##### Ejemplos de clases ✅
 
 El repositorio contiene ejemplos iniciales de programación orientada a objetos mediante las clases `Cat` y `CuentaBancaria`.
 
@@ -236,7 +299,17 @@ El repositorio contiene ejemplos iniciales de programación orientada a objetos 
 - Validación de operaciones mediante `ValueError`.
 - Representación de objetos mediante `__str__()`.
 
-#### Actividad de clases: Jarra ✅
+##### Actividad 3.2: Ejercicios de objetos (3/3) ✅
+
+Ejercicios de programación orientada a objetos centrados en la creación de clases, relaciones entre objetos, métodos especiales, herencia y abstracción.
+
+| Nº | Ejercicio | Clases | Estado |
+|:---:|:---|:---|:---:|
+| 01 | Gestión de jarras y transferencia de contenido | `Jarra` | ✅ |
+| 02 | Coordenadas y cálculo de distancias | `Punto`, `Segmento` | ✅ |
+| 03 | Cálculo de superficies y volúmenes de cuerpos geométricos | `CuerpoGeometrico`, `Cubo`, `Cilindro` | ✅ |
+
+###### Ejercicio 1: Jarra ✅
 
 Implementación de una clase `Jarra` que representa un recipiente con capacidad y contenido, permitiendo realizar operaciones sobre su estado.
 
@@ -260,8 +333,76 @@ Implementación de una clase `Jarra` que representa un recipiente con capacidad 
 - Referencias a objetos mediante parámetros.
 - Representación de objetos utilizando `__str__()`.
 - Organización de clases y ejecución mediante un archivo `main.py`.
+- Utilización de `if __name__ == "__main__":`.
 
 La actividad incluye un programa de prueba que crea dos jarras y ejecuta diferentes operaciones de llenado, vaciado, extracción y transferencia de contenido.
+
+Los archivos se encuentran en la carpeta `Clases/clases1/Jarra/`.
+
+###### Ejercicio 2: Coordenadas ✅
+
+Implementación de las clases `Punto` y `Segmento` para representar coordenadas en un plano cartesiano y calcular la distancia entre dos puntos.
+
+| Clase | Método | Funcionalidad | Estado |
+|:---|:---|:---|:---:|
+| `Punto` | `__init__()` | Inicialización y validación de coordenadas | ✅ |
+| `Punto` | `__eq__()` | Comparación de dos puntos | ✅ |
+| `Punto` | `__str__()` | Representación de las coordenadas | ✅ |
+| `Segmento` | `__init__()` | Inicialización mediante dos objetos `Punto` | ✅ |
+| `Segmento` | `longitud()` | Cálculo de la distancia entre los puntos | ✅ |
+| `Segmento` | `__eq__()` | Comparación de dos segmentos | ✅ |
+| `Segmento` | `__str__()` | Representación de los puntos del segmento | ✅ |
+
+**Conceptos trabajados:**
+
+- Representación de coordenadas mediante objetos.
+- Validación de valores dentro de un rango.
+- Utilización de objetos como atributos y parámetros.
+- Composición de objetos.
+- Comparación de instancias mediante `__eq__()`.
+- Representación personalizada mediante `__str__()`.
+- Cálculo de distancias euclidianas.
+- Utilización de `math.sqrt()` para calcular raíces cuadradas.
+- Operaciones matemáticas mediante métodos de instancia.
+
+El programa crea dos puntos con coordenadas `(3, 4)` y `(3, -3)`, construye un segmento entre ambos y calcula su longitud.
+
+El ejercicio se encuentra en el archivo `Clases/clases1/Coordenadas/Punto.py`.
+
+###### Ejercicio 3: CuerpoGeometrico ✅
+
+Implementación de una clase abstracta `CuerpoGeometrico` y dos clases derivadas, `Cubo` y `Cilindro`, que permiten calcular sus respectivas superficies y volúmenes.
+
+| Clase | Método | Funcionalidad | Estado |
+|:---|:---|:---|:---:|
+| `CuerpoGeometrico` | `superficie()` | Declaración del método abstracto de superficie | ✅ |
+| `CuerpoGeometrico` | `volumen()` | Declaración del método abstracto de volumen | ✅ |
+| `Cubo` | `__init__()` | Inicialización del lado del cubo | ✅ |
+| `Cubo` | `superficie()` | Cálculo de la superficie total del cubo | ✅ |
+| `Cubo` | `volumen()` | Cálculo del volumen del cubo | ✅ |
+| `Cubo` | `__str__()` | Representación del cubo | ✅ |
+| `Cilindro` | `__init__()` | Inicialización del radio y la altura | ✅ |
+| `Cilindro` | `superficie()` | Cálculo de la superficie total del cilindro | ✅ |
+| `Cilindro` | `volumen()` | Cálculo del volumen del cilindro | ✅ |
+| `Cilindro` | `__str__()` | Representación del cilindro | ✅ |
+
+**Conceptos trabajados:**
+
+- Creación de clases abstractas mediante `ABC`.
+- Declaración de métodos abstractos mediante `@abstractmethod`.
+- Herencia entre clases.
+- Implementación y sobrescritura de métodos.
+- Fundamentos de abstracción y polimorfismo.
+- Constructores con parámetros y valores por defecto.
+- Anotaciones de tipos en métodos de instancia.
+- Representación personalizada de objetos.
+- Utilización de la constante `math.pi`.
+- Aplicación de fórmulas geométricas.
+- Invocación de métodos y visualización de resultados.
+
+El programa crea un cubo de lado 3 y un cilindro de radio 2 y altura 4, calculando y mostrando sus respectivas superficies y volúmenes.
+
+El ejercicio se encuentra en el archivo `Clases/clases1/CuerpoGeometrico/CuerpoGeometrico.py`.
 
 ---
 
@@ -275,6 +416,13 @@ La actividad incluye un programa de prueba que crea dos jarras y ejecuta diferen
 | **pip** | Instalación y administración de paquetes |
 | **Git** | Control de versiones |
 | **GitHub** | Almacenamiento y seguimiento del repositorio |
+
+### Bibliotecas estándar utilizadas
+
+| Biblioteca | Utilización |
+|:---|:---|
+| `math` | Operaciones matemáticas, raíces cuadradas, redondeo y constante pi |
+| `abc` | Creación de clases y métodos abstractos |
 
 ---
 
@@ -305,24 +453,30 @@ La actividad incluye un programa de prueba que crea dos jarras y ejecuta diferen
 - Cálculo de estadísticas.
 - Comprensión de listas.
 - Resolución de problemas mediante estructuras iterativas.
+- Cálculo de distancias euclidianas.
+- Cálculo de superficies y volúmenes de cuerpos geométricos.
 
 ### Python — Funciones y modularización ✅
 
 - Declaración y llamada de funciones.
 - Parámetros y argumentos.
+- Parámetros con valores por defecto.
 - Valores de retorno mediante `return`.
 - Anotaciones de tipos.
 - Documentación mediante *docstrings*.
 - Importación de módulos y bibliotecas.
+- Importaciones mediante `import` y `from ... import ...`.
 - Validación de parámetros.
 - Gestión de errores mediante `raise ValueError`.
 - Reutilización de funciones.
 - Separación de datos y lógica del programa.
 - Operaciones matemáticas mediante funciones.
 - Tratamiento y filtrado de colecciones.
-- Conversión de temperaturas y divisas.
+- Conversión de temperaturas, velocidades y divisas.
+- Normalización de cadenas mediante `upper()` y `lower()`.
+- Redondeo mediante `round()` y `math.ceil()`.
 
-### Python — Programación orientada a objetos 🔄
+### Python — Programación orientada a objetos 🟡
 
 - Declaración de clases y creación de objetos.
 - Constructores mediante `__init__()`.
@@ -332,16 +486,25 @@ La actividad incluye un programa de prueba que crea dos jarras y ejecuta diferen
 - Valores por defecto en constructores.
 - Modificación y consulta del estado de objetos.
 - Operaciones entre diferentes objetos.
+- Composición de objetos.
 - Representación mediante `__str__()`.
+- Comparación de objetos mediante `__eq__()`.
 - Validación de datos y gestión de excepciones.
+- Herencia entre clases.
+- Clases abstractas mediante `ABC`.
+- Métodos abstractos mediante `@abstractmethod`.
+- Implementación y sobrescritura de métodos.
+- Fundamentos de abstracción y polimorfismo.
+- Diferencia entre referenciar e invocar métodos.
 - Separación de clases y programas principales en archivos independientes.
+- Control de ejecución mediante `if __name__ == "__main__":`.
 
 ---
 
 ## 📂 Estructura del repositorio
 
 ```text
-python-gs/
+optativa-python/
 ├── Unidad 1/
 │   ├── actividades_py/
 │   │   ├── actividad0/
@@ -376,27 +539,41 @@ python-gs/
 ├── Unidad 3/
 │   ├── Funciones/
 │   │   ├── funciones1/
-│   │   │   └── funciones.py
-│   │   └── bis/
-│   │       ├── funcion1.py
-│   │       ├── funcion2.py
-│   │       └── funcion3.py
+│   │   │   ├── funciones.py
+│   │   │   └── Actividad 3.1. Ejercicios de funciones.pdf
+│   │   ├── bis/
+│   │   │   ├── funcion1.py
+│   │   │   ├── funcion2.py
+│   │   │   ├── funcion3.py
+│   │   │   └── Actividad 3.1 bis. Ampliación de ejercicios de funciones.pdf
+│   │   ├── repaso_examen1.py
+│   │   └── UD3.1. Funciones.pdf
 │   │
 │   ├── Clases/
 │   │   ├── Ejemplos/
 │   │   │   ├── cat.py
 │   │   │   └── CuentaBancaria.py
-│   │   └── clases1/
-│   │       ├── Jarra.py
-│   │       └── main.py
+│   │   ├── clases1/
+│   │   │   ├── Jarra/
+│   │   │   │   ├── Jarra.py
+│   │   │   │   └── main.py
+│   │   │   ├── Coordenadas/
+│   │   │   │   └── Punto.py
+│   │   │   ├── CuerpoGeometrico/
+│   │   │   │   └── CuerpoGeometrico.py
+│   │   │   └── Actividad 3.2. Ejercicios de objetos.pdf
+│   │   └── UD3.3. Clases y objetos.pdf
 │   │
-│   └── Documentación de la unidad
+│   ├── examen_funciones_mabf/
+│   │   └── practica31.py
+│   │
+│   └── UD3.2. Excepciones.pdf
 │
 ├── .gitignore
 └── README.md
 ```
 
-El repositorio contiene scripts `.py`, material teórico y documentos correspondientes a las actividades de cada unidad.
+El repositorio contiene scripts `.py`, material teórico, ejercicios de preparación de exámenes, pruebas de evaluación y documentos correspondientes a las actividades de cada unidad.
 
 ---
 
@@ -408,6 +585,10 @@ El repositorio contiene scripts `.py`, material teórico y documentos correspond
 - [Biblioteca estándar de Python](https://docs.python.org/3/library/)
 - [Entornos virtuales con venv](https://docs.python.org/3/library/venv.html)
 - [Documentación de pip](https://pip.pypa.io/en/stable/)
+- [Clases y programación orientada a objetos](https://docs.python.org/3/tutorial/classes.html)
+- [Biblioteca math](https://docs.python.org/3/library/math.html)
+- [Clases abstractas mediante abc](https://docs.python.org/3/library/abc.html)
+- [Errores y excepciones](https://docs.python.org/3/tutorial/errors.html)
 
 ---
 
